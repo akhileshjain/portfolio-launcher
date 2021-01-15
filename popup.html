@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quick Portfolio Launcher</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link href="popup.css" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+    <div class="modal-header">
+      <h1 class="logo">
+        <img class="logo-icon" src="images/icon.png" />Portfolio Launcher
+        <span class="version">(1.0.0)</span>
+      </h1>
+    </div>
+    <div id="modal-content" class="modal-content">
+
+    </div>
+    <div class="modal-icons">
+        <p id="info">Please click the checkbox and enter corresponding URLs to make them part of the launcher.</p>
+        <p class="description">Access your Portfolio easily.</p>
+      <div class="flex-container">
+        <form id="url-form">
+            <div class="form-class">
+                <div>
+                    <input type="checkbox" id="globe" name="globe"/>
+                    <label for="globe">Website:</label>
+                </div>
+                <input type="url" id= "web_url" placeholder="Enter Website URL"/>
+            </div>
+            <div class="form-class">
+                <div>
+                    <input type="checkbox" id="twitter" name="twitter"/>
+                    <label for="github">Twitter:</label>
+                </div>
+                <input type="url" id= "twitter_url" placeholder="Enter twitter URL"/>
+            </div>
+            <div class="form-class">
+                <div>
+                    <input type="checkbox" id="facebook" name="facebook"/>
+                    <label for="facebook">Facebook:</label>
+                </div>
+                <input type="url" id= "facebook_url" placeholder="Enter Facebook URL"/>
+            </div>
+            <div class="form-class">
+                <div>
+                    <input type="checkbox" id="linkedin" name="linkedin"/>
+                    <label for="linkedin">LinkedIn:</label>
+                </div>
+                <input type="url" id= "linkedin_url" placeholder="Enter Linkedin URL"/>
+            </div>
+            <div class="form-class">
+                <div>
+                    <input type="checkbox" id="github" name="github"/>
+                    <label for="github">Github:</label>
+                </div>
+                <input type="url" id= "github_url" placeholder="Enter Github URL"/>
+            </div>
+            <button click = "hello()" type="submit">Submit</button>
+        </form>
+
+      </div>
+      <div id="info">Icons made by <a href="https://www.flaticon.com/free-icon/briefcase_4018644?search-type=icons&license=selection&order_by=4&grid=small&related_id=4018644&origin=search" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+     <script src="popup.js"></script>
+    </body>
+</html>
